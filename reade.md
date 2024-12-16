@@ -1,4 +1,3 @@
-This is code for personal website
 references:
 https://www.youtube.com/watch?v=ldwlOzRvYOU&t=6405s
 

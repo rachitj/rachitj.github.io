@@ -1,1 +1,495 @@
-hello world !
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Rachit Jauhari</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Competencies">Competencies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rachit Jauhari</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#Competencies" onclick="toggleMenu()">Competencies</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Rachit Jauhari profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Rachit Jauhari</h1>
+      <p class="section__text__p2">Senior Data Engineer</p>
+      <!--
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/RachitJ_resume.pdf')"
+          >
+            Download CV
+          </button>
+          -->
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
+    </div>
+
+    <div id="socials-container">
+      <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+        onclick="location.href='//www.linkedin.com/in/rjauhari/'" />
+      <img src="./assets/github.png" alt="My Github profile" class="icon"
+        onclick="location.href='https://github.com/rachitj'" />
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
+  </section>
+
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Rachit Jauhari profile picture" />
+        </div>
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>11+ years <br />Senior Data Engineer</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/Certification.png" alt="Certification icon" class="icon" />
+          <h3>Certification</h3>
+          PMP<br>ITIL V3<br>Lean Six Sigma(Green Belt)</br>
+
+          </p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>
+            M.B.A. Masters Degree
+            <br />B.Tech. Computer Science
+          </p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>Hi !</p>
+        <p>
+          I specialize in data engineering, warehousing, and analytics to deliver impactful solutions across industries.
+        </p>
+        <p>
+          Passionate about continuous learning, I enjoy building innovative projects on GitHub and exploring new
+          technologies to stay ahead in the ever-evolving data landscape.
+        </p>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Experience'" />
+  </section>
+
+  <section id="Experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="Experience-details-container">
+      <ul>
+        <li style="--accent-color:#41516C">
+          <div class="date">DEC 2020 - Present</div>
+          <div class="title">Senior Data Engineer/Specialist</div>
+          <div class="descr">
+            <p><b>DEFINITY INSURANCE, Waterloo,Canada</b></p>
+
+        <li style="--accent-color:#FBCA3E">
+          <div class="date">Jul 2019- Mar 2020</div>
+
+          <div class="title">Senior Data Engineer</div>
+
+          <div class="descr">
+            <p><b>UNITY HEALTH, Toronto, Canada</b></p>
+
+        </li>
+        <li style="--accent-color:#E24A68">
+          <div class="date">MAY 2018 - Jun 2019</div>
+          <div class="title">Senior Data Analyst</div>
+          <div class="descr">
+            <p><b>FLIPKART, India</b></p>
+          </div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+          <div class="date">Aug 2016 - Jul 2017</div>
+          <div class="title">Senior Data Analyst</div>
+          <div class="descr">
+            <p><b>DOMINION ENTERPRISES, Norfolk, USA</b></p>
+
+          </div>
+        </li>
+        <li style="--accent-color:#4CADAD">
+          <div class="date">May 2015 - Aug 2016</div>
+          <div class="title">Business Data Analyst</div>
+
+          <div class="descr">
+            <p><b>PANTHEON, Virginia, USA</b></p>
+
+          </div>
+        </li>
+        <li style="--accent-color:#FF6F61">
+          <div class="date">Mar 2011 - Sep 2011</div>
+          <div class="title">Systems Engineer</div>
+
+          <div class="descr">
+            <p><b>TATA CONSULTANCY SERVICES, India</b></p>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+
+
+  <section id="Competencies">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Competencies</h1>
+    <div class="Competencies-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="Competencies-sub-title">ETL/ELT</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Azure Data Factory </b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Azure Databricks</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>SSIS|SSAS </b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>DBT</b>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="Competencies-sub-title">Database Datawarehouse</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>AzureSQL</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Azure Synapse</b>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>PostgreSQL</b>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>SQL Server</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Snowflake</b>
+                <p>Basic </p>
+              </div>
+            </article>
+
+
+          </div>
+
+        </div>
+
+        <div>
+        </div>
+        <!-- Business Intelligence starts -->
+        <div class="details-container">
+          <h2 class="Competencies-sub-title">Business Intelligence</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>PowerBI</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Tableau</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Qlikview</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+
+          </div>
+
+
+          <!-- Business Intelligence ends -->
+
+        </div>
+
+
+        <!-- Programming starts -->
+        <div class="details-container">
+          <h2 class="Competencies-sub-title">Programming</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>Python</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>VBA</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+              <div>
+                <b>R</b>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+          </div>
+          <!-- Programming  ends -->
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="details-container">
+      <h2 class="Competencies-sub-title">Devops</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+          <div>
+            <b>Github </b>
+            <p>Competencies</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+          <div>
+            <b>Bitbucket</b>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+          <div>
+            <b>Terraform </b>
+            <p>Basic</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+          <div>
+            <b>Docker</b>
+            <p>Basic</p>
+          </div>
+        </article>
+      </div>
+
+
+    </div>
+    <div class="details-container">
+      <h2 class="Competencies-sub-title">Workflow Orchestration</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Competencies icon" class="icon" />
+          <div>
+            <b>Airflow</b>
+            <p>Intermediate</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Passion Projects</h1>
+    <div class="Competencies-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="Competencies-sub-title project-title">Project 1</h2>
+          <p>Terraform Azure Deployment with Budget Alert</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/rachitj/cicd_terraform_azure'">
+              Github
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="Competencies-sub-title project-title">Project 2</h2>
+          <p>NYC Citybike Analysis</p>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/rachitj/nyc_citybike_analysyis/tree/master'">
+            Github
+          </button>
+
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="Competencies-sub-title project-title">Project 3</h2>
+          <p>Salary Predictor for Analytics Professionals in Canada
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rachitj'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 3" class="project-img" />
+          </div>
+          <div>
+            <h2 class="Competencies-sub-title project-title">Project 4</h2>
+            <p>Ecommerce Transactions Project
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rachitj/ecommerce_transactions_project'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://public.tableau.com/app/profile/rachitjauhari/viz/e-commerce_analysisMonthly/MonthlyDashboard'">
+                Tableau Dashboard
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">dataforgemaster@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/rjauhari/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Competencies">Competencies</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Rachit Jauhari. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
